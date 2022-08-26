@@ -1,0 +1,15 @@
+<!-- 搜索 -->
+<view class="search_row">
+    <input type="text" value="{{inValue}}" placeholder="请输入宁要搜索的商品" bindinput="handleInput"></input>
+    <button size="mini" hidden="{{!isFocus}}" bindtap="handleCancel">取消</button>
+</view>
+<!-- 列表 -->
+<!-- lorem +回车 m语法可以打印一些很正规的文字-->
+<view class="search_content">
+    <navigator class="search_item"
+    url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}"
+    wx:for="{{goods}}"
+    wx:key="goods_id">
+   {{item.goods_name}}
+    </navigator>
+</view>

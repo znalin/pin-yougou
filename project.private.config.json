@@ -1,0 +1,102 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "分类",
+                    "pathName": "pages/category/category",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "商品列表",
+                    "pathName": "pages/goods_list/goods_list",
+                    "query": "cid=5",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "商品详情",
+                    "pathName": "pages/goods_detail/goods_detail",
+                    "query": "goods_id=43986",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "购物车",
+                    "pathName": "pages/cart/cart",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "支付页面",
+                    "pathName": "pages/pay/pay",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "授权",
+                    "pathName": "pages/auth/auth",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "登陆",
+                    "pathName": "pages/login/login",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "个人中心",
+                    "pathName": "pages/user/user",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "订单查询",
+                    "pathName": "pages/order/order",
+                    "query": "type=1",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "收藏",
+                    "pathName": "pages/collect/collect",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "搜索中心",
+                    "pathName": "pages/search/search",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "意见反馈",
+                    "pathName": "pages/feedback/feedback",
+                    "query": "",
+                    "scene": null,
+                    "launchMode": "default"
+                }
+            ]
+        }
+    }
+}

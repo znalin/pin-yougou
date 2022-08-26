@@ -1,0 +1,53 @@
+
+<view class="pyg_index">
+  <!-- 搜索框结构 -->
+  <SearchInput></SearchInput> 
+  <!-- 轮播图 -->
+  <view class="index_seiper">
+  <!-- 
+    swiper标签有默认宽高 100%*150px----1.将高度变成图片高度,宽度为屏幕默认宽度750px=750rpx
+    图片同上 320px*240px ---- 2.一般图片宽度100% 3.高度自适应 mode="widthFix" -->
+    <swiper autoplay="true" indicator-dots="true" circular="true">
+      <swiper-item 
+      wx:for="{{swiperList}}" 
+      wx:key="goods_id">
+        <navigator url="/pages/goods_detail/goods_detail?goods_id=129">
+          <image src="{{item.image_src}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 导航 -->
+  <view class="index_cate">
+    <navigator 
+    wx:for="{{cateList}}"
+    wx:key="name" 
+    url="/pages/category/category"
+    open-type="switchTab">
+      <image src="{{item.image_src}}" mode="widthFix"></image>
+    </navigator>
+  </view>
+  <!--楼层 -->
+  <view class="index_floor">
+    <view class="floor_group"
+      wx:for="{{floorList}}"
+      wx:for-item="item"
+      wx:for-index="index"
+      wx:key="floor_title">
+      <view class="floor_title">
+        <image src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+      </view>
+      <view class="floor_list">
+        <navigator 
+        wx:for="{{item.product_list}}"
+        wx:for-item="item2"
+        wx:for-index="index2"
+        wx:key="name"
+        url="/pages/goods_list/goods_list?query=户外">
+          <image src="{{item2.image_src}}" mode="{{index2 === 0?'widthFix':'scaleToFill'}}" ></image>
+          <!-- mode="{{index2 ===0?'widthFix':'scaleToFill'}}" -->
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
